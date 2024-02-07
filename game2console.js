@@ -26,7 +26,6 @@ rl.on("line", (input) => {
 
 let strike = 0, ball = 0;
 let checkNumber = function (myNumber) {
-    console.log(random);
 
     myNumber = [...String(myNumber)].map(Number);
     let cnt = new Set(myNumber);
@@ -45,7 +44,7 @@ let checkNumber = function (myNumber) {
         }
     }
 
-    console.log(`${ball}S ${strike}B`);
+    console.log(`${strike}S ${ball}B`);
 
     if (strike == 3) {
         console.log(`${count}번 시도 했습니다.`)
